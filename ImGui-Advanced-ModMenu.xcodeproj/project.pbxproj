@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA99CD1A2D62B13200BC2797 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = DA99CD152D62B13200BC2797 /* Makefile */; };
+		DA99CD1C2D62B13200BC2797 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DA99CD172D62B13200BC2797 /* .gitignore */; };
+		DA99CD1D2D62B13200BC2797 /* ImGui-ModMenu.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA99CD182D62B13200BC2797 /* ImGui-ModMenu.plist */; };
+		DA99CD1E2D62B13200BC2797 /* control in Resources */ = {isa = PBXBuildFile; fileRef = DA99CD192D62B13200BC2797 /* control */; };
+		DA99CD292D62B16E00BC2797 /* MenuLoad.mm in Sources */ = {isa = PBXBuildFile; fileRef = DA99CD202D62B16E00BC2797 /* MenuLoad.mm */; };
+		DA99CD2A2D62B16E00BC2797 /* UIView+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = DA99CD222D62B16E00BC2797 /* UIView+YYAdd.m */; };
+		DA99CD2B2D62B16E00BC2797 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = DA99CD252D62B16E00BC2797 /* UIImage+animatedGIF.m */; };
+		DA99CD2F2D62B1FC00BC2797 /* ImGuiDrawView.mm in Sources */ = {isa = PBXBuildFile; fileRef = DA99CD2E2D62B1FC00BC2797 /* ImGuiDrawView.mm */; };
+		DA99CD432D62B28C00BC2797 /* imgui_impl_metal.mm in Sources */ = {isa = PBXBuildFile; fileRef = DA99CD382D62B28C00BC2797 /* imgui_impl_metal.mm */; };
+		DA99CD452D62B28C00BC2797 /* initializer_list in Resources */ = {isa = PBXBuildFile; fileRef = DA99CD3A2D62B28C00BC2797 /* initializer_list */; };
+		DA99CD462D62B28C00BC2797 /* imgui_tables.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA99CD3E2D62B28C00BC2797 /* imgui_tables.cpp */; };
+		DA99CD482D62B28C00BC2797 /* imgui_draw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA99CD412D62B28C00BC2797 /* imgui_draw.cpp */; };
+		DA99CD552D62B31E00BC2797 /* imgui_custom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA99CD4D2D62B31E00BC2797 /* imgui_custom.cpp */; };
+		DA99CD572D62B31E00BC2797 /* imgui_helper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA99CD532D62B31E00BC2797 /* imgui_helper.cpp */; };
+		DA99CD662D62B36000BC2797 /* MH.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA99CD592D62B36000BC2797 /* MH.cpp */; };
+		DA99CD672D62B36000BC2797 /* ColorH.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA99CD5A2D62B36000BC2797 /* ColorH.cpp */; };
+		DA99CD692D62B36000BC2797 /* TimeH.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA99CD5F2D62B36000BC2797 /* TimeH.cpp */; };
+		DA99CD6A2D62B36000BC2797 /* StringH.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA99CD612D62B36000BC2797 /* StringH.cpp */; };
+		DA99CD8C2D62C1D400BC2797 /* HUD.mm in Sources */ = {isa = PBXBuildFile; fileRef = DA99CD802D62C1D300BC2797 /* HUD.mm */; };
+		DA99CD8D2D62C1D400BC2797 /* Set.mm in Sources */ = {isa = PBXBuildFile; fileRef = DA99CD812D62C1D300BC2797 /* Set.mm */; };
+		DA99CD8E2D62C1D400BC2797 /* ModuleManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = DA99CD832D62C1D300BC2797 /* ModuleManager.mm */; };
+		DA99CD8F2D62C1D400BC2797 /* SetManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = DA99CD862D62C1D300BC2797 /* SetManager.mm */; };
+		DA99CD902D62C1D400BC2797 /* Console.mm in Sources */ = {isa = PBXBuildFile; fileRef = DA99CD8A2D62C1D300BC2797 /* Console.mm */; };
+		DA99CD912D62C1D400BC2797 /* Menu.mm in Sources */ = {isa = PBXBuildFile; fileRef = DA99CD8B2D62C1D400BC2797 /* Menu.mm */; };
+		DA99CD952D62C5AE00BC2797 /* imgui_widgets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA99CD942D62C5AD00BC2797 /* imgui_widgets.cpp */; };
+		DAA23D452D62C7D9007A0C97 /* imgui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DAA23D442D62C7D9007A0C97 /* imgui.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DA99CCF82D62B06200BC2797 /* ImGui-Advanced-ModMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ImGui-Advanced-ModMenu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA99CD152D62B13200BC2797 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		DA99CD172D62B13200BC2797 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		DA99CD182D62B13200BC2797 /* ImGui-ModMenu.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ImGui-ModMenu.plist"; sourceTree = "<group>"; };
+		DA99CD192D62B13200BC2797 /* control */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = control; sourceTree = "<group>"; };
+		DA99CD202D62B16E00BC2797 /* MenuLoad.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MenuLoad.mm; sourceTree = "<group>"; };
+		DA99CD222D62B16E00BC2797 /* UIView+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YYAdd.m"; sourceTree = "<group>"; };
+		DA99CD232D62B16E00BC2797 /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
+		DA99CD242D62B16E00BC2797 /* YYCategoriesMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCategoriesMacro.h; sourceTree = "<group>"; };
+		DA99CD252D62B16E00BC2797 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
+		DA99CD262D62B16E00BC2797 /* UIView+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YYAdd.h"; sourceTree = "<group>"; };
+		DA99CD272D62B16E00BC2797 /* ImGuiDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImGuiDrawView.h; sourceTree = "<group>"; };
+		DA99CD282D62B16E00BC2797 /* MenuLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuLoad.h; sourceTree = "<group>"; };
+		DA99CD2E2D62B1FC00BC2797 /* ImGuiDrawView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ImGuiDrawView.mm; sourceTree = "<group>"; };
+		DA99CD322D62B28C00BC2797 /* imstb_textedit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imstb_textedit.h; sourceTree = "<group>"; };
+		DA99CD332D62B28C00BC2797 /* theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = theme.h; sourceTree = "<group>"; };
+		DA99CD342D62B28C00BC2797 /* imconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imconfig.h; sourceTree = "<group>"; };
+		DA99CD362D62B28C00BC2797 /* imstb_truetype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imstb_truetype.h; sourceTree = "<group>"; };
+		DA99CD382D62B28C00BC2797 /* imgui_impl_metal.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = imgui_impl_metal.mm; sourceTree = "<group>"; };
+		DA99CD3A2D62B28C00BC2797 /* initializer_list */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = initializer_list; sourceTree = "<group>"; };
+		DA99CD3C2D62B28C00BC2797 /* imgui_impl_metal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imgui_impl_metal.h; sourceTree = "<group>"; };
+		DA99CD3D2D62B28C00BC2797 /* imstb_rectpack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imstb_rectpack.h; sourceTree = "<group>"; };
+		DA99CD3E2D62B28C00BC2797 /* imgui_tables.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imgui_tables.cpp; sourceTree = "<group>"; };
+		DA99CD412D62B28C00BC2797 /* imgui_draw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imgui_draw.cpp; sourceTree = "<group>"; };
+		DA99CD4A2D62B31E00BC2797 /* imgui_helper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = imgui_helper.hpp; sourceTree = "<group>"; };
+		DA99CD4B2D62B31E00BC2797 /* imgui_notify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imgui_notify.h; sourceTree = "<group>"; };
+		DA99CD4D2D62B31E00BC2797 /* imgui_custom.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imgui_custom.cpp; sourceTree = "<group>"; };
+		DA99CD4F2D62B31E00BC2797 /* Fonts.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Fonts.hpp; sourceTree = "<group>"; };
+		DA99CD512D62B31E00BC2797 /* imgui_custom.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = imgui_custom.hpp; sourceTree = "<group>"; };
+		DA99CD532D62B31E00BC2797 /* imgui_helper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imgui_helper.cpp; sourceTree = "<group>"; };
+		DA99CD592D62B36000BC2797 /* MH.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MH.cpp; sourceTree = "<group>"; };
+		DA99CD5A2D62B36000BC2797 /* ColorH.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColorH.cpp; sourceTree = "<group>"; };
+		DA99CD5C2D62B36000BC2797 /* TimeH.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TimeH.hpp; sourceTree = "<group>"; };
+		DA99CD5D2D62B36000BC2797 /* StringH.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = StringH.hpp; sourceTree = "<group>"; };
+		DA99CD5F2D62B36000BC2797 /* TimeH.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TimeH.cpp; sourceTree = "<group>"; };
+		DA99CD602D62B36000BC2797 /* Obf.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Obf.hpp; sourceTree = "<group>"; };
+		DA99CD612D62B36000BC2797 /* StringH.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StringH.cpp; sourceTree = "<group>"; };
+		DA99CD622D62B36000BC2797 /* Singleton.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Singleton.hpp; sourceTree = "<group>"; };
+		DA99CD632D62B36000BC2797 /* MH.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MH.hpp; sourceTree = "<group>"; };
+		DA99CD642D62B36000BC2797 /* ColorH.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ColorH.hpp; sourceTree = "<group>"; };
+		DA99CD652D62B36000BC2797 /* Vec2H.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Vec2H.hpp; sourceTree = "<group>"; };
+		DA99CD6E2D62B56800BC2797 /* include.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = include.h; sourceTree = "<group>"; };
+		DA99CD6F2D62B6C200BC2797 /* logo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = logo.h; sourceTree = "<group>"; };
+		DA99CD7F2D62C1D300BC2797 /* Console.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Console.hpp; sourceTree = "<group>"; };
+		DA99CD802D62C1D300BC2797 /* HUD.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HUD.mm; sourceTree = "<group>"; };
+		DA99CD812D62C1D300BC2797 /* Set.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Set.mm; sourceTree = "<group>"; };
+		DA99CD822D62C1D300BC2797 /* Module.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Module.hpp; sourceTree = "<group>"; };
+		DA99CD832D62C1D300BC2797 /* ModuleManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ModuleManager.mm; sourceTree = "<group>"; };
+		DA99CD842D62C1D300BC2797 /* Menu.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Menu.hpp; sourceTree = "<group>"; };
+		DA99CD852D62C1D300BC2797 /* Set.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Set.hpp; sourceTree = "<group>"; };
+		DA99CD862D62C1D300BC2797 /* SetManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SetManager.mm; sourceTree = "<group>"; };
+		DA99CD872D62C1D300BC2797 /* ModuleManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ModuleManager.hpp; sourceTree = "<group>"; };
+		DA99CD882D62C1D300BC2797 /* HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUD.h; sourceTree = "<group>"; };
+		DA99CD892D62C1D300BC2797 /* SetManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SetManager.hpp; sourceTree = "<group>"; };
+		DA99CD8A2D62C1D300BC2797 /* Console.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Console.mm; sourceTree = "<group>"; };
+		DA99CD8B2D62C1D400BC2797 /* Menu.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Menu.mm; sourceTree = "<group>"; };
+		DA99CD942D62C5AD00BC2797 /* imgui_widgets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imgui_widgets.cpp; sourceTree = "<group>"; };
+		DAA23D422D62C7D9007A0C97 /* imgui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imgui.h; sourceTree = "<group>"; };
+		DAA23D432D62C7D9007A0C97 /* imgui_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imgui_internal.h; sourceTree = "<group>"; };
+		DAA23D442D62C7D9007A0C97 /* imgui.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imgui.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA99CCF52D62B06200BC2797 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA99CCEF2D62B06100BC2797 = {
+			isa = PBXGroup;
+			children = (
+				DA99CCFA2D62B06200BC2797 /* ImGui-Advanced-ModMenu */,
+				DA99CCF92D62B06200BC2797 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA99CCF92D62B06200BC2797 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA99CCF82D62B06200BC2797 /* ImGui-Advanced-ModMenu.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA99CCFA2D62B06200BC2797 /* ImGui-Advanced-ModMenu */ = {
+			isa = PBXGroup;
+			children = (
+				DA99CD142D62B13200BC2797 /* ImGui-ModMenu */,
+			);
+			path = "ImGui-Advanced-ModMenu";
+			sourceTree = "<group>";
+		};
+		DA99CD142D62B13200BC2797 /* ImGui-ModMenu */ = {
+			isa = PBXGroup;
+			children = (
+				DA99CD6E2D62B56800BC2797 /* include.h */,
+				DA99CD582D62B36000BC2797 /* util */,
+				DA99CD492D62B31E00BC2797 /* menu */,
+				DA99CD302D62B28C00BC2797 /* IMGUI */,
+				DA99CD1F2D62B16E00BC2797 /* Floating */,
+				DA99CD152D62B13200BC2797 /* Makefile */,
+				DA99CD172D62B13200BC2797 /* .gitignore */,
+				DA99CD182D62B13200BC2797 /* ImGui-ModMenu.plist */,
+				DA99CD192D62B13200BC2797 /* control */,
+			);
+			path = "ImGui-ModMenu";
+			sourceTree = "<group>";
+		};
+		DA99CD1F2D62B16E00BC2797 /* Floating */ = {
+			isa = PBXGroup;
+			children = (
+				DA99CD6F2D62B6C200BC2797 /* logo.h */,
+				DA99CD2E2D62B1FC00BC2797 /* ImGuiDrawView.mm */,
+				DA99CD202D62B16E00BC2797 /* MenuLoad.mm */,
+				DA99CD212D62B16E00BC2797 /* Utils */,
+				DA99CD272D62B16E00BC2797 /* ImGuiDrawView.h */,
+				DA99CD282D62B16E00BC2797 /* MenuLoad.h */,
+			);
+			path = Floating;
+			sourceTree = "<group>";
+		};
+		DA99CD212D62B16E00BC2797 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DA99CD222D62B16E00BC2797 /* UIView+YYAdd.m */,
+				DA99CD232D62B16E00BC2797 /* UIImage+animatedGIF.h */,
+				DA99CD242D62B16E00BC2797 /* YYCategoriesMacro.h */,
+				DA99CD252D62B16E00BC2797 /* UIImage+animatedGIF.m */,
+				DA99CD262D62B16E00BC2797 /* UIView+YYAdd.h */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		DA99CD302D62B28C00BC2797 /* IMGUI */ = {
+			isa = PBXGroup;
+			children = (
+				DA99CD4F2D62B31E00BC2797 /* Fonts.hpp */,
+				DA99CD4A2D62B31E00BC2797 /* imgui_helper.hpp */,
+				DA99CD4B2D62B31E00BC2797 /* imgui_notify.h */,
+				DA99CD4D2D62B31E00BC2797 /* imgui_custom.cpp */,
+				DA99CD512D62B31E00BC2797 /* imgui_custom.hpp */,
+				DA99CD532D62B31E00BC2797 /* imgui_helper.cpp */,
+				DA99CD942D62C5AD00BC2797 /* imgui_widgets.cpp */,
+				DA99CD322D62B28C00BC2797 /* imstb_textedit.h */,
+				DA99CD332D62B28C00BC2797 /* theme.h */,
+				DAA23D432D62C7D9007A0C97 /* imgui_internal.h */,
+				DAA23D442D62C7D9007A0C97 /* imgui.cpp */,
+				DAA23D422D62C7D9007A0C97 /* imgui.h */,
+				DA99CD342D62B28C00BC2797 /* imconfig.h */,
+				DA99CD362D62B28C00BC2797 /* imstb_truetype.h */,
+				DA99CD382D62B28C00BC2797 /* imgui_impl_metal.mm */,
+				DA99CD3A2D62B28C00BC2797 /* initializer_list */,
+				DA99CD3C2D62B28C00BC2797 /* imgui_impl_metal.h */,
+				DA99CD3D2D62B28C00BC2797 /* imstb_rectpack.h */,
+				DA99CD3E2D62B28C00BC2797 /* imgui_tables.cpp */,
+				DA99CD412D62B28C00BC2797 /* imgui_draw.cpp */,
+			);
+			path = IMGUI;
+			sourceTree = "<group>";
+		};
+		DA99CD492D62B31E00BC2797 /* menu */ = {
+			isa = PBXGroup;
+			children = (
+				DA99CD7F2D62C1D300BC2797 /* Console.hpp */,
+				DA99CD8A2D62C1D300BC2797 /* Console.mm */,
+				DA99CD882D62C1D300BC2797 /* HUD.h */,
+				DA99CD802D62C1D300BC2797 /* HUD.mm */,
+				DA99CD842D62C1D300BC2797 /* Menu.hpp */,
+				DA99CD8B2D62C1D400BC2797 /* Menu.mm */,
+				DA99CD822D62C1D300BC2797 /* Module.hpp */,
+				DA99CD872D62C1D300BC2797 /* ModuleManager.hpp */,
+				DA99CD832D62C1D300BC2797 /* ModuleManager.mm */,
+				DA99CD852D62C1D300BC2797 /* Set.hpp */,
+				DA99CD812D62C1D300BC2797 /* Set.mm */,
+				DA99CD892D62C1D300BC2797 /* SetManager.hpp */,
+				DA99CD862D62C1D300BC2797 /* SetManager.mm */,
+			);
+			path = menu;
+			sourceTree = "<group>";
+		};
+		DA99CD582D62B36000BC2797 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				DA99CD592D62B36000BC2797 /* MH.cpp */,
+				DA99CD5A2D62B36000BC2797 /* ColorH.cpp */,
+				DA99CD5C2D62B36000BC2797 /* TimeH.hpp */,
+				DA99CD5D2D62B36000BC2797 /* StringH.hpp */,
+				DA99CD5F2D62B36000BC2797 /* TimeH.cpp */,
+				DA99CD602D62B36000BC2797 /* Obf.hpp */,
+				DA99CD612D62B36000BC2797 /* StringH.cpp */,
+				DA99CD622D62B36000BC2797 /* Singleton.hpp */,
+				DA99CD632D62B36000BC2797 /* MH.hpp */,
+				DA99CD642D62B36000BC2797 /* ColorH.hpp */,
+				DA99CD652D62B36000BC2797 /* Vec2H.hpp */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA99CCF72D62B06200BC2797 /* ImGui-Advanced-ModMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA99CD112D62B06800BC2797 /* Build configuration list for PBXNativeTarget "ImGui-Advanced-ModMenu" */;
+			buildPhases = (
+				DA99CCF42D62B06200BC2797 /* Sources */,
+				DA99CCF52D62B06200BC2797 /* Frameworks */,
+				DA99CCF62D62B06200BC2797 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ImGui-Advanced-ModMenu";
+			productName = "ImGui-Advanced-ModMenu";
+			productReference = DA99CCF82D62B06200BC2797 /* ImGui-Advanced-ModMenu.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA99CCF02D62B06100BC2797 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					DA99CCF72D62B06200BC2797 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = DA99CCF32D62B06200BC2797 /* Build configuration list for PBXProject "ImGui-Advanced-ModMenu" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA99CCEF2D62B06100BC2797;
+			productRefGroup = DA99CCF92D62B06200BC2797 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA99CCF72D62B06200BC2797 /* ImGui-Advanced-ModMenu */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA99CCF62D62B06200BC2797 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA99CD1E2D62B13200BC2797 /* control in Resources */,
+				DA99CD1C2D62B13200BC2797 /* .gitignore in Resources */,
+				DA99CD1D2D62B13200BC2797 /* ImGui-ModMenu.plist in Resources */,
+				DA99CD452D62B28C00BC2797 /* initializer_list in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA99CCF42D62B06200BC2797 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA99CD672D62B36000BC2797 /* ColorH.cpp in Sources */,
+				DA99CD292D62B16E00BC2797 /* MenuLoad.mm in Sources */,
+				DA99CD6A2D62B36000BC2797 /* StringH.cpp in Sources */,
+				DA99CD2B2D62B16E00BC2797 /* UIImage+animatedGIF.m in Sources */,
+				DA99CD432D62B28C00BC2797 /* imgui_impl_metal.mm in Sources */,
+				DAA23D452D62C7D9007A0C97 /* imgui.cpp in Sources */,
+				DA99CD462D62B28C00BC2797 /* imgui_tables.cpp in Sources */,
+				DA99CD2F2D62B1FC00BC2797 /* ImGuiDrawView.mm in Sources */,
+				DA99CD482D62B28C00BC2797 /* imgui_draw.cpp in Sources */,
+				DA99CD8E2D62C1D400BC2797 /* ModuleManager.mm in Sources */,
+				DA99CD692D62B36000BC2797 /* TimeH.cpp in Sources */,
+				DA99CD8D2D62C1D400BC2797 /* Set.mm in Sources */,
+				DA99CD912D62C1D400BC2797 /* Menu.mm in Sources */,
+				DA99CD8F2D62C1D400BC2797 /* SetManager.mm in Sources */,
+				DA99CD572D62B31E00BC2797 /* imgui_helper.cpp in Sources */,
+				DA99CD1A2D62B13200BC2797 /* Makefile in Sources */,
+				DA99CD662D62B36000BC2797 /* MH.cpp in Sources */,
+				DA99CD952D62C5AE00BC2797 /* imgui_widgets.cpp in Sources */,
+				DA99CD552D62B31E00BC2797 /* imgui_custom.cpp in Sources */,
+				DA99CD2A2D62B16E00BC2797 /* UIView+YYAdd.m in Sources */,
+				DA99CD8C2D62C1D400BC2797 /* HUD.mm in Sources */,
+				DA99CD902D62C1D400BC2797 /* Console.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DA99CD0F2D62B06800BC2797 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DA99CD102D62B06800BC2797 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA99CD122D62B06800BC2797 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LKJU4A2YR8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ImGui-Advanced-ModMenu/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.euxdev.advmodmenu.ImGui-Advanced-ModMenu";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA99CD132D62B06800BC2797 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LKJU4A2YR8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ImGui-Advanced-ModMenu/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.euxdev.advmodmenu.ImGui-Advanced-ModMenu";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA99CCF32D62B06200BC2797 /* Build configuration list for PBXProject "ImGui-Advanced-ModMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA99CD0F2D62B06800BC2797 /* Debug */,
+				DA99CD102D62B06800BC2797 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA99CD112D62B06800BC2797 /* Build configuration list for PBXNativeTarget "ImGui-Advanced-ModMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA99CD122D62B06800BC2797 /* Debug */,
+				DA99CD132D62B06800BC2797 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA99CCF02D62B06100BC2797 /* Project object */;
+}
