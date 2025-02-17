@@ -10,7 +10,7 @@ This is the ported version of [ImGUI-Advanced-Cheat-Menu](https://github.com/Req
 ## Installation
 1. Clone the repository:
    ```sh
-   git clone https://github.com/YOUR_GITHUB/ImGUI-Advanced-Cheat-Menu-iOS.git
+   git clone https://github.com/Aethereux/ImGui-AdvancedModMenu-Template.git
    ```
 2. Build the tweak using **Theos** or your preferred iOS tweak development environment.
 
