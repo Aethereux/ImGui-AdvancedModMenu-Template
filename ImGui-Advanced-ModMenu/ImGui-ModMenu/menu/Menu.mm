@@ -261,6 +261,7 @@ void Menu::renderSubTab2() {
 		ImGui::BeginChild(obf("misc##0-0").c_str(), ImVec2(ImGuiHelper::getWidth(), 300), true);
 		
 		// your code here
+        ImGui::Checkbox("Streamer Mode", &StreamerMode);
 
 		ImGui::EndChild();
 		ImGui::Spacing();
