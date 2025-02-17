@@ -1,4 +1,4 @@
-# ImGUI Advanced Cheat Menu - iOS Tweak
+# ImGUI Advanced Mod Menu - iOS Tweak
 
 ## Overview
 This is the ported version of [ImGUI-Advanced-Cheat-Menu](https://github.com/RequestFX/ImGUI-Advanced-Cheat-Menu) as an iOS Jailed/Jailbroken tweak with a built-in streamer mode.
